@@ -1,4 +1,4 @@
-model_name_or_path: /cpfs/user/lengxue/code/multimodel/save_models/LF/llama3.1-8b_full_sft_base/checkpoint-1000
+model_name_or_path: /cpfs/user/lengxue/code/multimodel/save_models/LF/llama3.1-8b_full_sft_base/checkpoint-21
 template: llama3
 infer_backend: vllm
 vllm_enforce_eager: true

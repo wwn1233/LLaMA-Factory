@@ -9,6 +9,23 @@
 #     parallel: int
 #     system_prompt: str optional (add system instruction when generating model answer)
 
+gpt-3.5-turbo-0125:
+    model_name: gpt-3.5-turbo-0125
+    endpoints: null
+    api_type: openai
+    parallel: 8
+
+gpt-4-0314:
+    model_name: gpt-4-0314
+    endpoints: null
+    api_type: openai
+    parallel: 8
+
+gpt-4-1106-preview:
+    model_name: gpt-4-1106-preview
+    endpoints: null
+    api_type: openai
+    parallel: 8
 
 agi-gpt4o-ptu-lengxue:
     model_name: agi-gpt4o-ptu-lengxue
@@ -16,8 +33,8 @@ agi-gpt4o-ptu-lengxue:
     api_type: xhs
     parallel: 30
 
-llama3.1-8b_full_sft_base_checkpoint-1000:
-    model_name: llama3.1-8b_full_sft_base_checkpoint-1000
+llama3.1-8b_full_sft_base_checkpoint-21:
+    model_name: llama3.1-8b_full_sft_base_checkpoint-21
     endpoints:
         - api_base: http://0.0.0.0:8000/v1
           api_key: 0

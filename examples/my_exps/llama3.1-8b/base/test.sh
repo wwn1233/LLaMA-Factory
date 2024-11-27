@@ -123,13 +123,11 @@ for checkpoint in "${checkpoint_list[@]}"; do
   fuser -v /dev/nvidia*|awk -F " " '{print $0}' >/tmp/pid.file
   while read pid ; do kill -9 $pid; done </tmp/pid.file
   
-  break
 done
 
 cd $ARENA_HARD_PATH
 ## arena hard - judge
-python gen_judgment.py --setting_file $judge_yaml   --endpoint_file $api_yaml  --output_prefix $output_prefix
-
+python gen_judgment.py --setting-file $judge_yaml   --endpoint-file $api_yaml  --output_prefix $output_prefix
 
 ## arena hard - show results
 python show_result.py --output_prefix $output_prefix
