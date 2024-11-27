@@ -24,7 +24,7 @@ require_version("openai>=1.5.0", "To fix: pip install openai>=1.5.0")
 def main():
     client = OpenAI(
         api_key="{}".format(os.environ.get("API_KEY", "0")),
-        base_url="http://localhost:{}/v1".format(os.environ.get("API_PORT", 8000)),
+        base_url="http://0.0.0.0:8000/v1"    #"http://localhost:{}/v1".format(os.environ.get("API_PORT", 8000)),
     )
     messages = []
     messages.append(
@@ -32,10 +32,10 @@ def main():
             "role": "user",
             "content": [
                 {"type": "text", "text": "Output the color and number of each box."},
-                {
-                    "type": "image_url",
-                    "image_url": {"url": "https://qianwen-res.oss-cn-beijing.aliyuncs.com/Qwen2-VL/boxes.png"},
-                },
+                # {
+                #     "type": "image_url",
+                #     "image_url": {"url": "https://qianwen-res.oss-cn-beijing.aliyuncs.com/Qwen2-VL/boxes.png"},
+                # },
             ],
         }
     )
@@ -48,10 +48,10 @@ def main():
             "role": "user",
             "content": [
                 {"type": "text", "text": "What kind of flower is this?"},
-                {
-                    "type": "image_url",
-                    "image_url": {"url": "https://qianwen-res.oss-cn-beijing.aliyuncs.com/Qwen2-VL/flowers.jpg"},
-                },
+                # {
+                #     "type": "image_url",
+                #     "image_url": {"url": "https://qianwen-res.oss-cn-beijing.aliyuncs.com/Qwen2-VL/flowers.jpg"},
+                # },
             ],
         }
     )

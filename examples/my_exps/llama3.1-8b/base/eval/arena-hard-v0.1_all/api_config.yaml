@@ -1,0 +1,25 @@
+# name: str
+#     model_name: str
+#     endpoints: default to null
+#         - api_base: str
+#           api_key: str
+#           api_version: str optional (only for azure)
+#     api_type: str
+#     tokenizer: str optional (to optimize token limits)
+#     parallel: int
+#     system_prompt: str optional (add system instruction when generating model answer)
+
+
+agi-gpt4o-ptu-lengxue:
+    model_name: agi-gpt4o-ptu-lengxue
+    endpoints: null
+    api_type: xhs
+    parallel: 30
+
+llama3.1-8b_full_sft_base_checkpoint-1000:
+    model_name: llama3.1-8b_full_sft_base_checkpoint-1000
+    endpoints:
+        - api_base: http://0.0.0.0:8000/v1
+          api_key: 0
+    api_type: openai
+    parallel: 2
