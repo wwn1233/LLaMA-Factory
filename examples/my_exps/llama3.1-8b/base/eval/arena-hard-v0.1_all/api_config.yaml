@@ -33,8 +33,8 @@ agi-gpt4o-ptu-lengxue:
     api_type: xhs
     parallel: 30
 
-llama3.1-8b_full_sft_base_checkpoint-21:
-    model_name: llama3.1-8b_full_sft_base_checkpoint-21
+TEMPLATE:
+    model_name: TEMPLATE
     endpoints:
         - api_base: http://0.0.0.0:8000/v1
           api_key: 0

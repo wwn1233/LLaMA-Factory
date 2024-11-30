@@ -10,9 +10,9 @@ model_dir=/cpfs/user/lengxue/code/multimodel/save_models/LF/$model_name
 iter="" # 1000  ->  checkpoint-1000
 
 
-api_yaml=/cpfs/user/lengxue/code/multimodel/LLaMA-Factory/examples/my_exps/llama3.1-8b/base/eval/arena-hard-v0.1_all/api_config.yaml
-gen_answer_yaml=/cpfs/user/lengxue/code/multimodel/LLaMA-Factory/examples/my_exps/llama3.1-8b/base/eval/arena-hard-v0.1_all/gen_answer_config.yaml
-judge_yaml=/cpfs/user/lengxue/code/multimodel/LLaMA-Factory/examples/my_exps/llama3.1-8b/base/eval/arena-hard-v0.1_all/judge_config.yaml
+api_yaml=/cpfs/user/lengxue/code/multimodel/LLaMA-Factory/examples/my_exps/llama3.1-8b/base/eval/$dataset_name/api_config.yaml
+gen_answer_yaml=/cpfs/user/lengxue/code/multimodel/LLaMA-Factory/examples/my_exps/llama3.1-8b/base/eval/$dataset_name/gen_answer_config.yaml
+judge_yaml=/cpfs/user/lengxue/code/multimodel/LLaMA-Factory/examples/my_exps/llama3.1-8b/base/eval/$dataset_name/judge_config.yaml
 
 output_prefix="ablation_para"
 gen_parallel=2

@@ -8,4 +8,4 @@ num_choices: 1
 
 # a list of model to generate answers
 model_list:
-  - llama3.1-8b_full_sft_base_checkpoint-21
+  - TEMPLATE
